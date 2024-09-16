@@ -20,25 +20,25 @@ disallow_incomplete_defs = true
 disallow_untyped_calls = true
 
 [[tool.mypy.overrides]]
-module = "tests.*"
 ignore_errors = true
+module = "tests.*"
 
 [tool.pytest.ini_options]
+addopts = "--pdbcls=IPython.terminal.debugger:TerminalPdb"
 asyncio_mode = "auto"
 testpaths = ["tests/"]
-addopts = "--pdbcls=IPython.terminal.debugger:TerminalPdb"
 
 [tool.ruff]
 line-length = 88
 target-version = "py{{cookiecutter.python_version|replace('.', '')}}"
 
 [tool.ruff.format]
-quote-style = "preserve"
 preview = true
+quote-style = "preserve"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "C90", "G", "N", "PL", "UP", "T10", "T20", "RUF", "FIX003"]
 ignore = ["E203", "E266", "E501", "PLR0913"]
+select = ["B", "C90", "E", "F", "FIX003", "G", "I", "N", "PL", "RUF", "T10", "T20", "UP"]
 
 [tool.ruff.lint.isort]
 lines-after-imports = 2

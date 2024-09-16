@@ -22,7 +22,7 @@ repos:
           )
       - id: sort-pyproject-toml
         name: sort-pyproject-toml
-        entry: toml-sort --ignore-case --in-place --sort-first tool.poetry,tool.poetry.dependencies.python
+        entry: toml-sort --ignore-case --in-place --sort-first tool.poetry,tool.poetry.dependencies.python --sort-table-keys --sort-inline-arrays
         language: system
         files: "pyproject.toml"
       - id: poetry-check-lock
