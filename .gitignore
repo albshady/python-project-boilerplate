@@ -1,0 +1,21 @@
+# common
+.*
+*~
+!.gitignore
+
+# file types
+*.pyc
+*.npy
+*.ipynb
+
+# include dot files
+!.dockerignore
+!.gitattributes
+!.gitlab-ci.yml
+!.gitmodules
+!.env
+!.pre-commit-config.yaml
+
+# dirs
+/build
+/tmp
