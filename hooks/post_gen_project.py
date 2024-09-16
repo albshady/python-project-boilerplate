@@ -3,6 +3,8 @@ import subprocess
 
 DEV_DEPS = sorted(
     (
+        'ipdb',
+        'ipython',
         'mypy',
         'pre-commit',
         'pytest',
